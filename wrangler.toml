@@ -5,7 +5,7 @@ compatibility_flags = ["nodejs_compat"]
 type = "webpack"
 account_id = "4123bfba9c6e3fd034bcc7ecf6d4b005"
 workers_dev = true
-compatibility_date = "2024-08-13"
+compatibility_date = "2024-08-15"
 
 [build]
 command = "npm run build"
