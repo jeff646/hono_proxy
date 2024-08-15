@@ -1,18 +1,18 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "my-hono-proxy"
-main = "src/index.ts"
-compatibility_flags = ["nodejs_compat"]
-type = "webpack"
+type = "javascript"
+workers_dev = false
 account_id = "4123bfba9c6e3fd034bcc7ecf6d4b005"
-workers_dev = true
 compatibility_date = "2024-08-15"
 
 [build]
 command = "npm run build"
 
 [env.production]
+workers_dev = false
 route = "https://my-hono-proxy.5za.xyz/*"
 zone_id = "521a06115fb6edd57b20b2359ac71110"
+main = "./dist/index.js"
 
 
 # Automatically place your workloads in an optimal location to minimize latency.
