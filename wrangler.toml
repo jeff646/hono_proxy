@@ -9,6 +9,8 @@ compatibility_date = "2024-08-15"
 
 [build]
 command = "npm run build"
+upload.format = "service-worker"
+upload.main = "./dist/index.js" 
 
 [env.production]
 route = "https://my-hono-proxy.5za.xyz/*"
