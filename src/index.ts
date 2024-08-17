@@ -3,7 +3,7 @@ import { Hono } from 'hono';
 const app = new Hono();
 
 app.all('*', async (c) => {
-  const target = 'https://example.com'; // 你要代理的目标URL
+  const target = 'https://hono.5za.xyz'; // 你要代理的目标URL
   const url = new URL(c.req.url);
   url.hostname = new URL(target).hostname;
 
